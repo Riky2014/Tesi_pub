@@ -1,3 +1,7 @@
+from fenics import *
+import numpy as np
+import matplotlib.pyplot as plt
+
 def H(A, q):
   return as_tensor([[0, 1], [1190476.19048 * A ** 0.5 - (q / A) ** 2, 2 * q / A]])
 
